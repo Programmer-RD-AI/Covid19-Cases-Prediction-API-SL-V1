@@ -1,2 +1,2 @@
-web: gunicorn run:API
+web: gunicorn wsgi:API
 
