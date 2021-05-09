@@ -2,6 +2,7 @@ aniso8601==9.0.1
 click==7.1.2
 Flask==1.1.2
 Flask-RESTful==0.3.8
+gunicorn==20.1.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
 joblib==1.0.1
@@ -16,10 +17,3 @@ six==1.16.0
 sklearn==0.0
 threadpoolctl==2.1.0
 Werkzeug==1.0.1
-Click==7.0
-Flask==1.1.1
-gunicorn==19.9.0
-itsdangerous==1.1.0
-Jinja2==2.10.1
-MarkupSafe==1.1.1
-Werkzeug==0.15.6
