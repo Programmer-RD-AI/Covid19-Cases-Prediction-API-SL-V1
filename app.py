@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.debug = True
 app.secret_key = "This Key is secret_key for sure"
 api = Api(app)
-files = os.listdir("./API/models")
+files = os.listdir("./models")
 
 
 class Pred(Resource):
@@ -18,7 +18,7 @@ class Pred(Resource):
         print(date)
         results = {}
         for file in files:
-            model = pickle.load(open(f"./API/models/{file}", "rb"))
+            model = pickle.load(open(f"./models/{file}", "rb"))
             preds = model.predict(np.array(date).astype(np.float32).reshape(1,-1))
             print(file)
             print(preds)
