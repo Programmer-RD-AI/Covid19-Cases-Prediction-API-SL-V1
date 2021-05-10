@@ -1,4 +1,9 @@
+import threading
+import time
 import requests
-
-info = requests.get('http://192.168.1.8:9315/20211221').json()
-print(info)
+def send_request():
+    requests.get('https://covid19api-sl-programmer-rd-ai.herokuapp.com/20211221')
+for _ in range(125):
+    print(_)
+    threading.Thread(target=send_request).start()
+    print(_)
