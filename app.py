@@ -29,5 +29,3 @@ class Pred(Resource):
 
 api.add_resource(Pred, "/<int:date>")
 
-if __name__ == "__main__":
-    app.run(threaded=True, port=5000)
